@@ -1,0 +1,5 @@
+.verse {
+    display: table;
+    white-space: pre-line;
+    word-wrap: break-word;
+}

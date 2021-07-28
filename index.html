@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Теги</title>
+  </head>
+  <body>
+    <h1>TOP 5 SECRET TAGS</h1>
+    <ol>
+      <li>
+        <h2>Тег "optgroup"</h2>
+        <p class="verse">
+          Тег "optgroup" позволяет логически и визуально объединить элементы
+          select-а:
+        </p>
+        <img src="./images/img1.jpg" alt="" height="280" />
+        <h4>Пример:</h4>
+        <select>
+          <optgroup label="Цвета">
+            <option>Красный</option>
+            <option>Зеленый</option>
+            <option>Белый</option>
+          </optgroup>
+          <optgroup label="Порядок">
+            <option>Первый</option>
+            <option>Второй</option>
+            <option>Третий</option>
+          </optgroup>
+        </select>
+      </li>
+
+      <li>
+        <h2>Теги "ins" и "del"</h2>
+        <p class="verse">
+          Эти теги позволяют семантически выделить, что было до изменения на
+          сайте и что стало после. Текст, заключенный в тег "del" зачеркивается,
+          а заключенный в "ins" — подчеркивается:
+        </p>
+        <h4>Пример:</h4>
+        <del>Было</del> <ins>Стало</ins>
+      </li>
+      <li>
+        <h2>Тег "label"</h2>
+        <p>
+          Этот тег нужно(!) использовать во всех формах. С помощью этого тега
+          задаются метки элементам формы. Иными словами, при клике мышью на
+          текст в теге "label" переводится фокус к соответствующему элементу
+          формы, что существенно упрощает навигацию по форме. Например, этот тег
+          просто незаменим в голосовалках:
+        </p>
+        <img src="./images/img2.jpg" alt="" height="280" />
+        <h4>Пример:</h4>
+        <form action="#">
+          <h4>А Вы любите спать?</h4>
+          <input type="radio" id="id1" />
+          <label for="id1">Да</label>
+          <br />
+          <input type="radio" id="id2" />
+          <label for="id2">Нет</label>
+          <br />
+          <input type="radio" id="id3" />
+          <label for="id3">Я люблю есть</label>
+        </form>
+        <p>
+          В данном примере не нужно мышкой целиться в radio-инпут, теперь чтобы
+          выбрать нужный вариант ответа, достаточно нажать на сам текст,
+          заключенный в "label"
+        </p>
+      </li>
+
+      <li>
+        <h2>Тег "fieldset"</h2>
+        <p>
+          Тег "fieldset" логически группирует элементы формы. С помощью тега
+          "legend" можно задать название группе. Визуально группа выделяется
+          рамкой вместе с меткой:
+        </p>
+        <img src="./images/img3.jpg" alt="" height="260" />
+        <h4>Пример:</h4>
+        <form action="#">
+          <fieldset>
+            <legend>Ваш пол</legend>
+            <input type="radio" />
+            Мужской
+            <input type="radio" />
+            Женский
+          </fieldset>
+        </form>
+      </li>
+      <li>
+        <h2>Атрибут tabindex</h2>
+        <p>
+          Этот тег определяет порядок перехода между полями формы по клавише
+          «Tab»:
+        </p>
+        <img src="./images/img4.jpg" alt="" height="150" />
+        <h4>Пример:</h4>
+        <form action="#">
+          <input type="text" tabindex="1" placeholder="email" />
+          <a href="#">Забыли пароль</a>
+          <input type="password" tabindex="2" placeholder="password" />
+          <input type="button" value="Войти" tabindex="3" />
+        </form>
+        <p>
+          В этом примере по нажатию клавиши «Tab» мы пропускаем ссылку «Забыли
+          пароль»
+        </p>
+      </li>
+    </ol>
+  </body>
+</html>
